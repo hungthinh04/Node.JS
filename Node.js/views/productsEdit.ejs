@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Thêm tài khoản</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sửa tài khoản</h1>
+
+        <form action="/products/edit/<%= product.Id %>" method="post" class="col-md-3">
+
+            <div class="form-group">
+                <label for="sku">SKU</label>
+                <input id="sku" class="form-control" type="text" name="sku" value="<%= product.SKU %>">
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" class="form-control" type="text" name="name" value="<%= product.Name %>">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input id="description" class="form-control" type="text" name="description"
+                    value="<%= product.Description %>">
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input id="price" class="form-control" type="text" name="price" value="<%= product.Price %>">
+            </div>
+            <div class="form-group">
+                <label for="stock">Stock</label>
+                <input id="stock" class="form-control" type="text" name="stock" value="<%= product.Stock %>">
+            </div>
+            <div class="form-group">
+                <label for="productTypeID">productTypeID</label>
+                <input id="productTypeID" class="form-control" type="text" name="productTypeID"
+                    value="<%= product.ProductTypeId %>">
+            </div>
+
+
+            <button class="btn btn-success">
+                <i class="fa fa-check" aria-hidden="true"></i> Sửa
+            </button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
